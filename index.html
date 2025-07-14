@@ -6,6 +6,7 @@
     <title>JS Music player</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/46ecabe206.js" crossorigin="anonymous"></script>
+    <script src="./index.js" defer></script>
 </head>
 <body>
      <div class="container">
@@ -23,14 +24,14 @@
                  <h1>Forever young</h1>
                  <p>The Jay-z</p>
 
-                 <audio  controls>
+                 <audio  controls id="songs">
                     <source src="music/forever.mp3" type="audio/mp4">
                  </audio>
                  <input type="range" value="0" id="progress">
 
                  <div class="controls">
                            <div><i class="fa-solid fa-backward"></i></div>
-                           <div><i class="fa-solid fa-play"></i></div>
+                           <div onclick="playPause()"><i class="fa-solid fa-play" id="controls"></i></div>
                            <div><i class="fa-solid fa-forward"></i></div>
                  </div>
            </div>
